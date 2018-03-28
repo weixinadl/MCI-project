@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        #mainWindow {
+            position: absolute;
+            border:2px solid red;
+            width: 800px;
+            height: 520px;
+            top: 50%;
+            left: 50%;
+            margin-left: -400px;
+            margin-top: -260px;
+
+        }
+        #menu{
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            color: white;
+            width: 800px;
+
+        }
+        #menuBar{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+
+        }
+        .horizontalList{
+            float: left;
+            padding-right: 5px;
+            padding-left: 5px;
+            
+        }
+       .horizontalList:hover{
+           background-color: gray;
+       }
+       #statusBar {
+           position: absolute;
+           top: 500px;
+           left: 0px;
+           color: white;
+           background-color: black;
+           width: 800px;
+           height: 20px;
+       }
+
+        #map {
+            position: absolute;
+            top: 20px;
+            left: 200px;
+            height: 500px;
+            width: 400px;
+            background-image: url("map_background.jpg");
+        }
+        #legend {
+            position: absolute;
+            top: 420px;
+            left: 200px;
+            height: 100px;
+            width: 400px;
+            background-color: #DDDDDD;
+        }
+        #dataset {
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            height: 500px;
+            width: 200px;
+            background-image: url("notebook.jpg");
+        }
+
+        #file {
+            position: absolute;
+            top: 20px;
+            left: 600px;
+            height: 500px;
+            width: 200px;
+            background-image: url("notebook.jpg");
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainWindow">
+        <div id="menu">
+            <ul id="menuBar">
+                <li class="horizontalList" id="menu1">File</li>
+                <li class="horizontalList" id="menu2">Edit</li>
+                <li class="horizontalList" id="menu3">Help</li>
+            </ul>
+
+        </div>
+        <div id="map"></div>
+        <div id="dataset">
+            <p>ITEM 1</p>
+            <p>ITEM 2</p>
+            <p>ITEM 3</p>
+        </div>
+        <div id="file">
+            <p>ITEM 1</p>
+            <p>ITEM 2</p>
+            <p>ITEM 3</p>
+        </div>
+        <div id="legend">
+            <p>ITEM 1   ITEM 3</p>
+            <p>ITEM 2   ITEM 3</p>
+
+        </div>
+        <div id="statusBar">
+            <p style="margin: 0 0 0 0">copyright: XXV version 0.1.2</p>
+        </div>
+    </div>
+</body>
+</html>
